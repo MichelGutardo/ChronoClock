@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(54, 61, 68);
+}
+
+.center{
+    margin: auto;
+    float: none !important;
+    margin-left: 35%;
+}
+.control {
+    border-style: groove;
+    border-radius: 20px;
+    position: relative;
+    float: left;
+    padding: 12px;
+}
+
+.title{
+    font-size: x-large;
+    font-weight: lighter;
+    margin-left: 40%;
+}
+.chron{
+    color: aquamarine;
+}
+.clock{
+    color: lightskyblue;
+}
+
+.description{
+    color: rgb(168, 252, 255);
+    float: left;
+    padding: 20px 0px 10px 0px
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.stop-list{
+    margin-top: 10px;
+    width: 172px;
+    min-height: 103px;
+}
+
+.btn{
+    border-style: outset;
+    background-color: midnightblue;
+    color: lightskyblue;
+    border-radius: 9px;
+    width: 70px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    float: left;
+    position: relative;
+    margin: 10px 5px;
+}
+
+.btn:hover{
+    background-color: azure;
+}
+
+.btn:active {
+    background-color: gray;
+}
+
+#clock {
+      font-size: 700%;  
+      font-family: monospace;
+      color: lightskyblue;
+}
+
+#stopwatch {
+    font-size: 82px;  
+    font-family: monospace;
+    color: aquamarine;
+}
+

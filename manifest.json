@@ -1,0 +1,33 @@
+{
+ "manifest_version": 2,
+ "name": "ChronoClock",
+ "description": "Simple clock and Chronometer.",
+ "version": "1",
+ "author": "Michel Gutardo Ramos de Lima",
+ "browser_action": {
+   "default_title": "ChronoClock",
+   "default_page": "index.html"
+ },
+ "default_icon": {
+    "16": "images/bell.png"
+  },
+"content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+
+"permissions": [
+    "notifications",
+    "idle"    
+],
+
+"check": {
+    "scripts": ["js/jquery-3.3.1.min.js", "js/chronoclock.js","js/clock.js" ,"js/stopwatch.js"],
+    "persistent": false
+},
+
+"content_scripts": [ {
+    "js": [ "js/jquery-3.3.1.min.js", "js/chronoclock.js","js/clock.js" ,"js/stopwatch.js"],
+    "matches": [ "<all_urls>" ],
+    "run_at": "document_end",
+    "persistent": true
+    } ]
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>ChronoClock</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/chronoclock.css" />
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="title">
+        <h1>
+            <span class="chron">Chrono<span class="clock">Clock</span>
+            </span>
+        </h1>
+    </div>
+    <hr />
+    <div id="clock" class="center clock">Time:</div>
+    <hr />
+
+    <div class="control">
+        <label class="description">Stopwatch Control:</label>
+        <div class="clearfix"></div>
+        <div id="activate" class="btn">Start</div>
+        <div id="reset" class="btn">Reset</div>
+    </div>
+
+    <div class="center clock" id="stopwatch">Stopwatch:</div>
+    
+    <div class="clearfix"></div>
+
+    <div class="control stop-list" id="stop-list">
+        <label class="description">Stop list:</label>
+        <ul id='list' class="description"></ul>
+    </div>
+</body>
+
+<script src="js/clock.js"></script>
+<script src="js/stopwatch.js"></script>
+<script src="js/chronoclock.js"></script>
+
+</html>
