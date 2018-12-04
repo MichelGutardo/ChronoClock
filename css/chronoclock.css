@@ -48,8 +48,8 @@ body {
 
 .btn{
     border-style: outset;
-    background-color: midnightblue;
-    color: lightskyblue;
+    background-color: steelblue;
+    color: white;
     border-radius: 9px;
     width: 70px;
     text-align: center;
@@ -80,3 +80,35 @@ body {
     color: aquamarine;
 }
 
+@media only screen and (max-width:800px) {
+    .center{
+        margin-left: 5% !important;
+        font-size: 650%;
+
+    }
+    .title{
+        margin-left: 5% !important;
+    }
+
+    #stopwatch {
+        font-size: 50px;  
+        font-family: monospace;
+        color: aquamarine;
+    }
+    
+}
+
+@media only screen and (max-height:200px) {
+    .center{
+        margin-left: 5% !important;
+        font-size: 650%;
+
+    }
+    .title{
+        display: none;
+    }
+
+    .block-stopwatch {
+        display: none;
+    }
+}

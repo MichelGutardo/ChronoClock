@@ -12,7 +12,6 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
 
-
 </head>
 
 <body>
@@ -26,20 +25,22 @@
     <div id="clock" class="center clock">Time:</div>
     <hr />
 
-    <div class="control">
-        <label class="description">Stopwatch Control:</label>
+    <div class="block-stopwatch">
+        <div class="center clock" id="stopwatch">Stopwatch:</div>
+
+        <div class="control">
+            <label class="description">Stopwatch Control:</label>
+            <div class="clearfix"></div>
+            <div id="activate" class="btn">Start</div>
+            <div id="reset" class="btn">Reset</div>
+        </div>
+
         <div class="clearfix"></div>
-        <div id="activate" class="btn">Start</div>
-        <div id="reset" class="btn">Reset</div>
-    </div>
 
-    <div class="center clock" id="stopwatch">Stopwatch:</div>
-    
-    <div class="clearfix"></div>
-
-    <div class="control stop-list" id="stop-list">
-        <label class="description">Stop list:</label>
-        <ul id='list' class="description"></ul>
+        <div class="control stop-list" id="stop-list">
+            <label class="description">Stop list:</label>
+            <ul id='list' class="description"></ul>
+        </div>
     </div>
 </body>
 
