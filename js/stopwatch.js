@@ -57,7 +57,7 @@ function updateAction(){
 }
 
 function addTenths(){
-    if(ths >100){
+    if(ths >=99){
         addSeconds();
         ths = 0;
     }else{

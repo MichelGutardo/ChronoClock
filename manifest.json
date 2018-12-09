@@ -4,24 +4,15 @@
  "description": "Simple clock and Chronometer.",
  "version": "1",
  "author": "Michel Gutardo Ramos de Lima",
- "browser_action": {
-   "default_title": "ChronoClock",
-   "default_page": "index.html"
- },
- "default_icon": {
-    "16": "images/bell.png"
-  },
 "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
-
-"permissions": [
-    "notifications",
-    "idle"    
-],
-
-"check": {
-    "scripts": ["js/jquery-3.3.1.min.js", "js/chronoclock.js","js/clock.js" ,"js/stopwatch.js"],
+"browser_action": {},
+"background": {
+    "scripts":["js/open.js"],
     "persistent": false
 },
+"permissions": [
+    "tabs"
+],
 
 "content_scripts": [ {
     "js": [ "js/jquery-3.3.1.min.js", "js/chronoclock.js","js/clock.js" ,"js/stopwatch.js"],
